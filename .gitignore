@@ -1,0 +1,5 @@
+# Ignore node modules (dependencies)
+node_modules/
+
+# Ignore download folder (files that are not needed for development, only useful for personal reference like Text.docx)
+download/
