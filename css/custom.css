@@ -11867,8 +11867,64 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-body #hero header nav div {
+body .dark-blue-text {
+  color: #162a5c !important;
+}
+body #hero {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+body #hero .hero-container header nav .menu-container {
   --bs-border-opacity: 0.5;
+}
+body #hero .hero-container .hero-content {
+  padding-bottom: 80px !important;
+}
+body #hero .hero-container .hero-content .hero-content-body .trusted > .trusted-logos > div {
+  width: 30%;
+}
+body #hero .hero-container .hero-content .credit-card-container {
+  overflow: hidden;
+  border-bottom-right-radius: 65px !important;
+}
+body #hero .hero-container .hero-content .credit-card-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  z-index: 0;
+}
+body #hero .hero-container .hero-content .credit-card-container .credit-card {
+  background-color: #1d1348;
+}
+body #hero .hero-container .hero-content .credit-card-container .credit-card .card-header .status {
+  background: #5ccaa7;
+  border: none;
+}
+body #hero .hero-container .hero-content .credit-card-container .credit-card .card-body .label {
+  font-size: 10px;
+}
+body #hero .hero-container .hero-content .credit-card-container .credit-card .card-footer .info .label {
+  font-size: 10px;
+}
+body #hero .hero-container .hero-content .credit-card-container .view-all-btn {
+  color: #007bff;
+  text-decoration: none !important;
+  border-bottom: 1px dashed #007bff;
+  padding-bottom: 2px;
+}
+body #hero .hero-container .hero-content .credit-card-container .view-all-btn i {
+  transition: transform 0.3s ease-in-out;
+}
+body #hero .hero-container .hero-content .credit-card-container .view-all-btn:hover {
+  color: rgb(0, 86.1, 178.5);
+  border-bottom-color: rgb(0, 86.1, 178.5);
+}
+body #hero .hero-container .hero-content .credit-card-container .view-all-btn:hover i {
+  transform: translateX(3px);
 }
 
 /*# sourceMappingURL=custom.css.map */

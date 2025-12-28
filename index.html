@@ -9,8 +9,8 @@
 </head>
 <body>
     <section id="hero" class="bg-primary text-light">
-        <div class="container">
-            <header class="text-light">
+        <div class="hero-container container">
+            <header class="text-light pb-3">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent d-flex justify-content-between">
                     <div class="menu-container container border-bottom pb-3">
                         <a href="#hero" class="navbar-brand d-flex align-items-center">
@@ -48,7 +48,7 @@
 
                         <div class="navbar-nav ms-auto align-items-center">
                             <a href="#" class="nav-link me-3">Sign in</a>
-                            <a href="#" class="btn btn-light px-4 d-flex align-items-center">
+                            <a href="#" class="btn btn-light px-4 d-flex align-items-center gap-2 fw-semibold">
                                 <i class="bi bi-bag"></i>
                                 Buy now
                             </a>
@@ -57,19 +57,23 @@
                 </nav>
             </header>
             
-            <div class="hero-container">
-                <div>
-                    <h1>Development done right</h1>
-                    <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+            <div class="hero-content d-flex flex-column justify-content-between align-items-center py-5 gap-3 flex-md-row">
+                <div class="hero-content-body d-flex flex-column gap-5">
+                    <div class="w-50 d-flex flex-column gap-3">
+                        <h1>Development done right</h1>
+                        <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+                    </div>
                     
-                    <button type="button" class="">
-                        Get started
-                        <i style="color: black;" class="bi bi-plus"></i>
-                    </button>
+                    <div>
+                        <button type="button" class="btn btn-light fw-semibold mb-3 px-4 py-2">
+                            Get started
+                            <i style="color: black;" class="bi bi-plus"></i>
+                        </button>
+                    </div>
 
-                    <div class="trusted">
-                        <p>Trusted by:</p>
-                        <div class="trusted-logos">
+                    <div class="trusted d-flex flex-row align-items-center gap-5 flex-wrap">
+                        <p class="m-0">Trusted by:</p>
+                        <div class="trusted-logos d-flex gap-3 flex-grow-1">
                             <div>
                                 <img src="./asset/img/google-white.svg" alt="Google White Logo">
                             </div>
@@ -86,49 +90,58 @@
                     </div>
                 </div>
 
-                <div class="credit-card-container">
-                    <div class="manage-add-container">
-                        <p>Manage cards</p>
-                        <button type="button" class="">Add new</button>
+                <div class="credit-card-container card p-4 rounded gap-3 position-relative rounded-end-bottom-5">
+                    <div class="manage-add-container d-flex justify-content-between align-items-center">
+                        <p class="m-0 dark-blue-text fw-semibold">Manage cards</p>
+                        <button type="button" class="btn btn-light shadow fw-semibold px-4">Add new</button>
                     </div>
 
-                    <div class="credit-card">
-                        <div class="card-header">
+                    <div class="credit-card text-white rounded d-flex flex-column gap-2 py-3 px-3">
+                        <div class="card-header d-flex justify-content-between align-items-center">
                             <img src="./asset/img/mastercard.svg" alt="Mastercard" class="logo">
-                            <div class="status">Active</div>
+                            <div class="status btn btn-success fw-semibold">Active</div>
                         </div>
 
-                        <div class="card-body">
-                            <p class="label">CARD NUMBER</p>
-                            <p class="number">4358 - 7421 - 9256 - 6682</p>
+                        <div class="card-body d-flex flex-column gap-1">
+                            <p class="label fw-semibold m-0">CARD NUMBER</p>
+                            <p class="number fs-3 m-0">4358 - 7421 - 9256 - 6682</p>
                         </div>
 
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-between align-items-center flex-row pb-3 w-75">
                             <div class="info">
-                                <p class="label">NAME</p>
-                                <p class="value">John Snow</p>
+                                <p class="label m-0 ">NAME</p>
+                                <p class="value m-0">John Snow</p>
                             </div>
                             <div class="info">
-                                <p class="label">EXPIRY DATE</p>
-                                <p class="value">11/23</p>
+                                <p class="label m-0">EXPIRY DATE</p>
+                                <p class="value m-0">11/23</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="credit-card-list">
-                        <div class="payments">
-                            <p>Starbucks</p>
-                            <p>$5,50 USD</p>
-                            <p>Pending - San Francisco, United States</p>
+                    <div class="credit-card-list d-flex flex-column gap-2">
+                        <div class="payments border-bottom pb-3">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <p class="m-0 dark-blue-text fw-bold">Starbucks</p>
+                                <p class="m-0 dark-blue-text fw-semibold">$5,50 USD</p>
+                            </div>
+                            <p class="text-secondary m-0">Pending - San Francisco, United States</p>
                         </div>
-                        <div class="payments">
-                            <p>Nike Sports</p>
-                            <p>$129,00 USD</p>
-                            <p>Pending - Lisbon, Portugal</p>
+                        <div class="payments border-bottom pb-3">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <p class="m-0 dark-blue-text fw-bold">Nike Sports</p>
+                                <p class="m-0 dark-blue-text fw-semibold">$129,00 USD</p>
+                            </div>
+                            <p class="text-secondary m-0">Pending - Lisbon, Portugal</p>
                         </div>
                     </div>
 
-                    <button type="button" class="">View all</button>
+                    <div class="d-flex pb-3">
+                        <button type="button" class="view-all-btn btn btn-list">
+                            View all
+                            <i class="bi bi-chevron-compact-right small"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
