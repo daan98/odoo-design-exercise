@@ -6,6 +6,7 @@ $dark-blue: #162a5c;
 $link-blue: #007bff;
 $green-status: #5ccaa7;
 $credit-card: #1d1348;
+$gold-yellow: #febd3d;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,10 +15,12 @@ body {
   box-sizing: border-box;
   margin: 0;
 
+  // utilities
   .dark-blue-text {
     color: $dark-blue !important;
   }
 
+  // Hero Section
   #hero {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     .hero-container{
@@ -101,5 +104,66 @@ body {
     }
 
 
+  }
+
+  // Home Section
+  #home {
+    .home-content {
+      .awesome-container {
+        .projects-container {
+          .single-project-container {
+            progress {
+              /* Removes default browser styling for consistency */
+              -webkit-appearance: none;
+              appearance: none;
+              height: 3px; /* Set a specific height */
+              border-radius: 10px;
+              background-color: #e0e0e0; /* Fallback background color */
+              
+              /* Style the background track (WebKit) */
+              &::-webkit-progress-bar {
+                background-color: #e0e0e0;
+                border-radius: 10px;
+              }
+
+              /* Style the progress value bar (WebKit/Mozilla) */
+              &::-webkit-progress-value {
+                background-color: $gold-yellow; /* Green progress bar */
+                border-radius: 10px;
+                transition: width 0.4s ease; /* Smooth transition for value changes */
+              }
+
+              &::-moz-progress-bar {
+                background-color: $gold-yellow; /* Green progress bar for Firefox */
+                border-radius: 10px;
+                transition: width 0.4s ease;
+              }
+            }
+          }
+        }
+
+        .play-video-image-container {
+          right: -20%;
+          top: -20%;
+
+          .play-icon-container {
+            top: 5%;
+            right: 5%;
+
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .section-info {
+        width: 35%;
+        
+        .tool-title {
+          width: fit-content;
+        }
+      }
+    } 
   }
 }

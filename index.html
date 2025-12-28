@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="credit-card-container card p-4 rounded gap-3 position-relative rounded-end-bottom-5">
+                <div class="credit-card-container card p-4 rounded-4 gap-3 position-relative rounded-end-bottom-5">
                     <div class="manage-add-container d-flex justify-content-between align-items-center">
                         <p class="m-0 dark-blue-text fw-semibold">Manage cards</p>
                         <button type="button" class="btn btn-light shadow fw-semibold px-4">Add new</button>
@@ -147,59 +147,60 @@
         </div>
     </section>
 
-    <section id="home">
-        <div class="awesome-container">
-            <h2>Awesome projects</h2>
-
-            <div class="projects-container">
-                <div>
-                    <div class="project-info">
-                        <p>Create the new logo</p>
-                        <p>
-                            3:50
-                            <i class="bi bi-chevron-right"></i>
-                        </p>
+    <section id="home" class="pt-5">
+        <div class="home-content container px-3 py-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5 flex-wrap">
+            <div class="awesome-container position-relative w-50">
+                <div class="projects-container bg-white p-4 rounded d-flex flex-column gap-4 shadow">
+                    <h3 class="dark-blue-text m-0">Awesome projects</h3>
+                    <div class="single-project-container">
+                        <div class="project-info d-flex justify-content-between align-items-center mb-2">
+                            <p class="m-0 dark-blue-text fw-semibold">Create the new logo</p>
+                            <p class="m-0 text-secondary">
+                                3:50
+                                <i class="bi bi-chevron-right"></i>
+                            </p>
+                        </div>
+                        <progress class="project-progress w-100" max="9" value="3.5">3:50</progress>
                     </div>
-                    <progress class="project-progress" max="9" value="3.5">3:50</progress>
+
+                    <div class="single-project-container">
+                        <div class="project-info d-flex justify-content-between align-items-center mb-2">
+                            <p class="m-0 dark-blue-text fw-semibold">Set up the color palette</p>
+                            <p class="m-0 text-secondary">
+                                4:00
+                                <i class="bi bi-chevron-right"></i>
+                            </p>
+                        </div>
+                        <progress class="project-progress w-100" max="9" value="4">4:00</progress>
+                    </div>
+
+                    <div class="single-project-container">
+                        <div class="project-info d-flex justify-content-between align-items-center mb-2">
+                            <p class="m-0 dark-blue-text fw-semibold">Wireframe and prototype</p>
+                            <p class="m-0 text-secondary">
+                                6:50
+                                <i class="bi bi-chevron-right"></i>
+                            </p>
+                        </div>
+                        <progress class="project-progress w-100" max="9" value="6.5">6:50</progress>
+                    </div>
+                
                 </div>
 
-                <div>
-                    <div class="project-info">
-                        <p>Set up the color palette</p>
-                        <p>
-                            4:00
-                            <i class="bi bi-chevron-right"></i>
-                        </p>
+                <div class="play-video-image-container w-50 position-absolute">
+                    <img src="./asset/img/img_01.jpg" alt="Tools" class="rounded-4 w-100 position-relative">
+                    <div class="play-icon-container text-bg-light position-absolute d-flex flex-row justify-content-space-between align-items-center gap-2 rounded fw-semibold px-2 py-1">
+                        <p class="m-0">Play video</p>
+                        <i class="bi bi-play"></i>
                     </div>
-                    <progress class="project-progress" max="9" value="4">4:00</progress>
                 </div>
-
-                <div>
-                    <div class="project-info">
-                        <p>Wireframe and prototype</p>
-                        <p>
-                            6:50
-                            <i class="bi bi-chevron-right"></i>
-                        </p>
-                    </div>
-                    <progress class="project-progress" max="9" value="6.5">6:50</progress>
-                </div>
-            
             </div>
 
-            <div class="play-video-image-container">
-                <img src="./asset/img/img_01.jpg" alt="Tools">
-                <div class="play-icon-container">
-                    <p>Play video</p>
-                    <i class="bi bi-play"></i>
-                </div>
+            <div class="section-info">
+                <h1 class="tool-title bg-warning text-white rounded-pill text-center fs-6 p-2 px-3">Tools</h1>
+                <h2 class="dark-blue-text">We build for designers and developers</h2>
+                <p class="text-secondary">Get components and examples, including tons of variables that will help you grow your business.</p>
             </div>
-        </div>
-
-        <div class="section-info">
-            <h1>Tools</h1>
-            <h2>We build for designers and developers</h2>
-            <p>Get components and examples, including tons of variables that will help you grow your business.</p>
         </div>
     </section>
 

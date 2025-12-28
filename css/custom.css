@@ -11926,5 +11926,48 @@ body #hero .hero-container .hero-content .credit-card-container .view-all-btn:ho
 body #hero .hero-container .hero-content .credit-card-container .view-all-btn:hover i {
   transform: translateX(3px);
 }
+body #home .home-content .awesome-container .projects-container .single-project-container progress {
+  /* Removes default browser styling for consistency */
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px; /* Set a specific height */
+  border-radius: 10px;
+  background-color: #e0e0e0; /* Fallback background color */
+  /* Style the background track (WebKit) */
+}
+body #home .home-content .awesome-container .projects-container .single-project-container progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+body #home .home-content .awesome-container .projects-container .single-project-container progress {
+  /* Style the progress value bar (WebKit/Mozilla) */
+}
+body #home .home-content .awesome-container .projects-container .single-project-container progress::-webkit-progress-value {
+  background-color: #febd3d; /* Green progress bar */
+  border-radius: 10px;
+  transition: width 0.4s ease; /* Smooth transition for value changes */
+}
+body #home .home-content .awesome-container .projects-container .single-project-container progress::-moz-progress-bar {
+  background-color: #febd3d; /* Green progress bar for Firefox */
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+body #home .home-content .awesome-container .play-video-image-container {
+  right: -20%;
+  top: -20%;
+}
+body #home .home-content .awesome-container .play-video-image-container .play-icon-container {
+  top: 5%;
+  right: 5%;
+}
+body #home .home-content .awesome-container .play-video-image-container .play-icon-container p {
+  font-size: 12px;
+}
+body #home .home-content .section-info {
+  width: 35%;
+}
+body #home .home-content .section-info .tool-title {
+  width: fit-content;
+}
 
 /*# sourceMappingURL=custom.css.map */
