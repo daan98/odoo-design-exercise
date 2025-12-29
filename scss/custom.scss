@@ -20,6 +20,18 @@ body {
     color: $dark-blue !important;
   }
 
+  .green-status-bg {
+    background-color: $green-status !important;
+  }
+
+  .green-status-text {
+    color: $green-status !important;
+  }
+
+  .w-fit-content {
+    width: fit-content !important;
+  }
+
   // Hero Section
   #hero {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
@@ -110,6 +122,11 @@ body {
   #home {
     .home-content {
       .awesome-container {
+        width: 100%;
+
+        @media (min-width: 768px) {
+          width: 50%;
+        }
         .projects-container {
           .single-project-container {
             progress {
@@ -143,8 +160,15 @@ body {
         }
 
         .play-video-image-container {
-          right: -20%;
-          top: -20%;
+          position: relative;
+          width: 100%;
+
+          @media (min-width: 768px) {
+            position: absolute;
+            right: -20%;
+            top: -20%;
+            width: 50%;
+          }
 
           .play-icon-container {
             top: 5%;
@@ -158,12 +182,63 @@ body {
       }
 
       .section-info {
-        width: 35%;
-        
-        .tool-title {
-          width: fit-content;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          width: 35%;
         }
       }
     } 
+  }
+
+  // Products Section
+  #products {
+    .products-content {
+      @media (min-width: 768px) {
+        gap: 15% !important;
+      }
+
+      .play-video-image-container {
+        position: relative;
+
+        .play-icon-container {
+          top: 5%;
+          left: 5%;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  // App Section
+  #app {
+    .app-content-container {
+      .section-info {
+        button {
+          i {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .play-video-image-container {
+        
+        .play-icon-container {
+          top: 5%;
+          left: 5%;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }

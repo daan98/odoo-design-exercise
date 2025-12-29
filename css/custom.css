@@ -11870,6 +11870,15 @@ body {
 body .dark-blue-text {
   color: #162a5c !important;
 }
+body .green-status-bg {
+  background-color: #5ccaa7 !important;
+}
+body .green-status-text {
+  color: #5ccaa7 !important;
+}
+body .w-fit-content {
+  width: fit-content !important;
+}
 body #hero {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
@@ -11926,6 +11935,14 @@ body #hero .hero-container .hero-content .credit-card-container .view-all-btn:ho
 body #hero .hero-container .hero-content .credit-card-container .view-all-btn:hover i {
   transform: translateX(3px);
 }
+body #home .home-content .awesome-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body #home .home-content .awesome-container {
+    width: 50%;
+  }
+}
 body #home .home-content .awesome-container .projects-container .single-project-container progress {
   /* Removes default browser styling for consistency */
   -webkit-appearance: none;
@@ -11953,8 +11970,16 @@ body #home .home-content .awesome-container .projects-container .single-project-
   transition: width 0.4s ease;
 }
 body #home .home-content .awesome-container .play-video-image-container {
-  right: -20%;
-  top: -20%;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body #home .home-content .awesome-container .play-video-image-container {
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    width: 50%;
+  }
 }
 body #home .home-content .awesome-container .play-video-image-container .play-icon-container {
   top: 5%;
@@ -11964,10 +11989,40 @@ body #home .home-content .awesome-container .play-video-image-container .play-ic
   font-size: 12px;
 }
 body #home .home-content .section-info {
-  width: 35%;
+  width: 100%;
 }
-body #home .home-content .section-info .tool-title {
-  width: fit-content;
+@media (min-width: 768px) {
+  body #home .home-content .section-info {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  body #products .products-content {
+    gap: 15% !important;
+  }
+}
+body #products .products-content .play-video-image-container {
+  position: relative;
+}
+body #products .products-content .play-video-image-container .play-icon-container {
+  top: 5%;
+  left: 5%;
+}
+body #products .products-content .play-video-image-container .play-icon-container p {
+  font-size: 12px;
+}
+body #app .app-content-container .section-info button i {
+  font-size: 40px;
+}
+body #app .app-content-container .section-info button p {
+  font-size: 12px;
+}
+body #app .app-content-container .play-video-image-container .play-icon-container {
+  top: 5%;
+  left: 5%;
+}
+body #app .app-content-container .play-video-image-container .play-icon-container p {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -149,7 +149,7 @@
 
     <section id="home" class="pt-5">
         <div class="home-content container px-3 py-5 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5 flex-wrap">
-            <div class="awesome-container position-relative w-50">
+            <div class="awesome-container position-relative d-flex flex-column gap-5 d-md-block">
                 <div class="projects-container bg-white p-4 rounded d-flex flex-column gap-4 shadow">
                     <h3 class="dark-blue-text m-0">Awesome projects</h3>
                     <div class="single-project-container">
@@ -187,130 +187,138 @@
                 
                 </div>
 
-                <div class="play-video-image-container w-50 position-absolute">
+                <div class="play-video-image-container">
                     <img src="./asset/img/img_01.jpg" alt="Tools" class="rounded-4 w-100 position-relative">
                     <div class="play-icon-container text-bg-light position-absolute d-flex flex-row justify-content-space-between align-items-center gap-2 rounded fw-semibold px-2 py-1">
-                        <p class="m-0">Play video</p>
+                        <p class="m-0 d-none d-md-block">Play video</p>
                         <i class="bi bi-play"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="section-info">
-                <h1 class="tool-title bg-warning text-white rounded-pill text-center fs-6 p-2 px-3">Tools</h1>
+            <div class="section-info d-flex flex-column gap-3">
+                <h1 class="w-fit-content bg-warning text-white rounded-pill text-center fs-6 py-2 px-3">Tools</h1>
                 <h2 class="dark-blue-text">We build for designers and developers</h2>
                 <p class="text-secondary">Get components and examples, including tons of variables that will help you grow your business.</p>
             </div>
         </div>
     </section>
 
-    <section id="products">
-        <div class="section-info">
-            <h1>Features</h1>
-            <h2>Get components and examples, including tons of variables that will help you grow your business.</h2>
-            
-            <p class="feature-check">
-                <div class="icon-container">
-                    <i class="bi bi-check2"></i>
-                </div>
-                Perfect for modern startups
-            </p>
+    <section id="products" class="pt-5">
+        <div class="products-content container px-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
+            <div class="section-info d-flex flex-column gap-3">
+                <h1 class="w-fit-content text-bg-success rounded-pill text-center fs-6 py-2 px-3 green-status-bg">Features</h1>
+                <h2 class="dark-blue-text">Get components and examples, including tons of variables that will help you grow your business.</h2>
+                
+                <p class="feature-check green-status-text">
+                    <i class="bi bi-check2 btn btn-success green-status-bg border-0 me-3"></i>
+                    Perfect for modern startups
+                </p>
 
-            <p class="feature-check">
-                <div class="icon-container">
-                    <i class="bi bi-check2"></i>
-                </div>
-                Fully customizable and scalable
-            </p>
-        </div>
+                <p class="feature-check green-status-text">
+                    <i class="bi bi-check2 btn btn-success green-status-bg border-0 me-3"></i>
+                    Fully customizable and scalable
+                </p>
+            </div>
 
-        <div class="play-video-image-container">
-            <img src="./asset/img/img_02.jpg" alt="Features">
-            <div class="play-icon-container">
-                <p>Play video</p>
-                <i class="bi bi-play"></i>
+            <div class="play-video-image-container">
+                <img src="./asset/img/img_02.jpg" alt="Features" class="rounded-4 w-100 position-relative">
+                <div class="play-icon-container text-bg-light position-absolute d-flex flex-row justify-content-space-between align-items-center gap-2 rounded fw-semibold px-2 py-1">
+                    <p class="m-0 d-none d-md-block">Play video</p>
+                    <i class="bi bi-play"></i>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="page">
-        <div class="section-info">
-            <h1>Technology</h1>
-            <h2>We use the latest technologies on the market</h2>
-            <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+    <section id="page" class="pt-5">
+        <div class="page-content-container container px-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
+            <div class="section-info">
+                <h1 class="w-fit-content text-bg-primary rounded-pill text-center fs-6 py-2 px-3">Technology</h1>
+                <h2 class="dark-blue-text">We use the latest technologies on the market</h2>
+                <p class="text-secondary">Get components and examples, including tons of variables that will help you grow your business.</p>
 
-            <button type="button" class="">See case studies</button>
-        </div>
-
-        <div class="company-cards-container">
-            <div class="company-card-container">
-                <img src="./asset/img/airbnb.svg" alt="Airbnb Logo">
-                <div class="stars-container">
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-                <div class="company-card-text">
-                    <p>4.95 out of 5 stars <br> <span>from 23 reviews</span></p>
-                </div>
+                <button type="button" class="btn btn-link">See case studies</button>
             </div>
-            <div class="company-card-container">
-                <img src="./asset/img/img_01.jpg" alt="Company 1 Logo">
-                <p>Website UI Kit</p>
-                <div class="people-container">
-                    <img src="./asset/img/person_01.jpg" alt="Person-1">
-                    <img src="./asset/img/person_02.jpg" alt="Person-2">
+
+            <div class="company-cards-container">
+                <div class="company-card-container">
+                    <img src="./asset/img/airbnb.svg" alt="Airbnb Logo">
+                    <div class="stars-container">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <div class="company-card-text">
+                        <p>4.95 out of 5 stars <br> <span>from 23 reviews</span></p>
+                    </div>
+                </div>
+                <div class="company-card-container">
+                    <img src="./asset/img/img_01.jpg" alt="Company 1 Logo">
+                    <p>Website UI Kit</p>
+                    <div class="people-container">
+                        <img src="./asset/img/person_01.jpg" alt="Person-1">
+                        <img src="./asset/img/person_02.jpg" alt="Person-2">
+                        <img src="./asset/img/person_03.jpg" alt="Person-3">
+                    </div>
+
+                    <div class="company-icons-container">
+                        <i class="bi bi-paperclip"></i>
+                        <i class="bi bi-suit-heart"></i>
+                        <i class="bi bi-eye"></i>
+                    </div>
+                </div>
+                <div class="person-card-container">
                     <img src="./asset/img/person_03.jpg" alt="Person-3">
+                    <div>
+                        <p>JH</p>
+                        <p>Jimmy Hendrix</p>
+                        <i class="bi bi-suit-heart"></i>
+                    </div>
                 </div>
-
-                <div class="company-icons-container">
-                    <i class="bi bi-paperclip"></i>
-                    <i class="bi bi-suit-heart"></i>
-                    <i class="bi bi-eye"></i>
-                </div>
-            </div>
-            <div class="person-card-container">
-                <img src="./asset/img/person_03.jpg" alt="Person-3">
-                <div>
-                    <p>JH</p>
-                    <p>Jimmy Hendrix</p>
-                    <i class="bi bi-suit-heart"></i>
-                </div>
-            </div>
-            <div class="component-card-container">
-                <i class="bi bi-check2"></i>
-                <div class="component-card-info">
-                    <p>300+ components</p>
-                    <p>Built to be customized.</p>
+                <div class="component-card-container">
+                    <i class="bi bi-check2"></i>
+                    <div class="component-card-info">
+                        <p>300+ components</p>
+                        <p>Built to be customized.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="app">
-        <div class="section-info">
-            <h1>Easy to install</h1>
-            <h2>Download, install and run.</h2>
-            <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+    <section id="app" class="pt-5">
+        <div class="app-content-container container px-3 d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
+            <div class="section-info d-flex flex-column gap-3">
+                <h1 class="w-fit-content bg-warning text-white rounded-pill text-center fs-6 py-2 px-3">Easy to install</h1>
+                <h2 class="dark-blue-text">Download, install and run.</h2>
+                <p class="text-secondary">Get components and examples, including tons of variables that will help you grow your business.</p>
 
-            <button type="button" class="">
-                <i class="bi bi-apple"></i>
-                Download on the <span>App Store</span>
-            </button>
+                <div class="d-flex flex-column flex-sm-row justify-content-start gap-5">
+                    <button type="button" class="btn btn-dark fs-6 d-flex align-items-center gap-2 justify-content-evenly py-0 px-4">
+                        <i class="bi bi-apple"></i>
+                        <p class="d-flex flex-column justify-content-center align-items-center m-0">
+                            Download on the <span class="fs-5">App Store</span>
+                        </p>
+                    </button>
 
-            <button type="button" class="">
-                <i class="bi bi-google-play"></i>
-                Download on the <span>Play Store</span>
-            </button>
-        </div>
+                    <button type="button" class="btn btn-dark fs-6 d-flex align-items-center gap-2 justify-content-evenly py-0 px-4">
+                        <i class="bi bi-google-play"></i>
+                        <p class="d-flex flex-column justify-content-center align-items-center m-0">
+                            Download on the <span class="fs-5">Play Store</span>
+                        </p>
+                    </button>
+                </div>
+            </div>
 
-        <div class="play-video-image-container">
-            <img src="./asset/img/img_03.jpg" alt="Tools">
-            <div class="play-icon-container">
-                <p>Play video</p>
-                <i class="bi bi-play"></i>
+            <div class="play-video-image-container position-relative">
+                <img src="./asset/img/img_03.jpg" alt="Easy Install" class="rounded-4 w-100 position-relative">
+                <div class="play-icon-container text-bg-light position-absolute d-flex flex-row justify-content-space-between align-items-center gap-2 rounded fw-semibold px-2 py-1">
+                    <p class="mb-lg-0 d-none d-md-block">Play video</p>
+                    <i class="bi bi-play"></i>
+                </div>
             </div>
         </div>
     </section>
