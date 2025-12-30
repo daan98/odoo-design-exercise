@@ -20,6 +20,10 @@ body {
     color: $dark-blue !important;
   }
 
+  .dark-blue-bg {
+    background: $dark-blue !important;
+  }
+
   .green-status-bg {
     background-color: $green-status !important;
   }
@@ -30,6 +34,14 @@ body {
 
   .w-fit-content {
     width: fit-content !important;
+  }
+  
+  .overlap {
+    margin-left: -16px !important;
+  }
+
+  .rotate-45 {
+    transform: rotate(45deg);
   }
 
   // Hero Section
@@ -47,6 +59,11 @@ body {
       .hero-content {
         padding-bottom: 80px !important;
         .hero-content-body {
+          & > div:nth-child(1) {
+            @media (min-width: 1200px) {
+              width: 50% !important;
+            }
+          }
           .trusted > .trusted-logos > div {
             width: 30%;
           }
@@ -81,6 +98,12 @@ body {
             .card-body {
               .label {
                 font-size: 10px;
+              }
+
+              .number {
+                @media (min-width: 768px) {
+                  font-size: 20px !important;
+                }
               }
             }
 
@@ -213,6 +236,14 @@ body {
     }
   }
 
+  #page {
+    .page-content-container {
+      @media (min-width: 768px) {
+        gap: 15% !important;
+      }
+    }
+  }
+
   // App Section
   #app {
     .app-content-container {
@@ -238,6 +269,15 @@ body {
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+
+  #infinite {
+    .container {
+      .infinite-content-container {
+        border-top-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
       }
     }
   }

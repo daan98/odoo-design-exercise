@@ -11870,6 +11870,9 @@ body {
 body .dark-blue-text {
   color: #162a5c !important;
 }
+body .dark-blue-bg {
+  background: #162a5c !important;
+}
 body .green-status-bg {
   background-color: #5ccaa7 !important;
 }
@@ -11879,6 +11882,12 @@ body .green-status-text {
 body .w-fit-content {
   width: fit-content !important;
 }
+body .overlap {
+  margin-left: -16px !important;
+}
+body .rotate-45 {
+  transform: rotate(45deg);
+}
 body #hero {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
@@ -11887,6 +11896,11 @@ body #hero .hero-container header nav .menu-container {
 }
 body #hero .hero-container .hero-content {
   padding-bottom: 80px !important;
+}
+@media (min-width: 1200px) {
+  body #hero .hero-container .hero-content .hero-content-body > div:nth-child(1) {
+    width: 50% !important;
+  }
 }
 body #hero .hero-container .hero-content .hero-content-body .trusted > .trusted-logos > div {
   width: 30%;
@@ -11915,6 +11929,11 @@ body #hero .hero-container .hero-content .credit-card-container .credit-card .ca
 }
 body #hero .hero-container .hero-content .credit-card-container .credit-card .card-body .label {
   font-size: 10px;
+}
+@media (min-width: 768px) {
+  body #hero .hero-container .hero-content .credit-card-container .credit-card .card-body .number {
+    font-size: 20px !important;
+  }
 }
 body #hero .hero-container .hero-content .credit-card-container .credit-card .card-footer .info .label {
   font-size: 10px;
@@ -12011,6 +12030,11 @@ body #products .products-content .play-video-image-container .play-icon-containe
 body #products .products-content .play-video-image-container .play-icon-container p {
   font-size: 12px;
 }
+@media (min-width: 768px) {
+  body #page .page-content-container {
+    gap: 15% !important;
+  }
+}
 body #app .app-content-container .section-info button i {
   font-size: 40px;
 }
@@ -12023,6 +12047,10 @@ body #app .app-content-container .play-video-image-container .play-icon-containe
 }
 body #app .app-content-container .play-video-image-container .play-icon-container p {
   font-size: 12px;
+}
+body #infinite .container .infinite-content-container {
+  border-top-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 /*# sourceMappingURL=custom.css.map */
