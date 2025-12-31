@@ -12063,6 +12063,10 @@ body #infinite .container .infinite-content-container {
 }
 body #awards {
   background-color: #fafbff !important;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+body #awards .awards-container {
+  padding-bottom: 80px !important;
 }
 body #awards .awards-container .awards-cards-container .award-card {
   cursor: pointer;
@@ -12091,6 +12095,9 @@ body #awards .awards-container .awards-cards-container .award-card .award-learn-
   body #awards .awards-container .awards-cards-container .award-card:nth-child(odd) {
     margin-top: 48px;
   }
+}
+body #docs {
+  padding: 80px 0 !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -237,6 +237,7 @@ body {
     }
   }
 
+  // Page Section
   #page {
     .page-content-container {
       @media (min-width: 768px) {
@@ -286,6 +287,7 @@ body {
     }
   }
 
+  // Infinite Section
   #infinite {
     .container {
       .infinite-content-container {
@@ -295,10 +297,13 @@ body {
     }
   }
 
+  // Awards Section
   #awards {
     background-color: #fafbff !important;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
     .awards-container {
+      padding-bottom: 80px !important;
       .awards-cards-container {
 
         .award-card {
@@ -338,5 +343,10 @@ body {
         }
       }
     }
+  }
+
+  // Docs Section
+  #docs {
+    padding: 80px 0 !important;
   }
 }
