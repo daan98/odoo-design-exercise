@@ -8,6 +8,7 @@ $green-status: #5ccaa7;
 $credit-card: #1d1348;
 $gold-yellow: #febd3d;
 $learn-dark-blue: #1a2b4b;
+$footer-muted: #aab2bd;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,6 +44,10 @@ body {
 
   .rotate-45 {
     transform: rotate(45deg);
+  }
+
+  .footer-muted-gray-text {
+    color: $footer-muted;
   }
 
   // Hero Section
@@ -348,5 +353,61 @@ body {
   // Docs Section
   #docs {
     padding: 80px 0 !important;
+
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          &::after {
+            background-image: none !important;
+            content: '+'; // Icono cuando está cerrado
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $footer-muted; // Color de tu elección
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: none !important; // Evita que Bootstrap lo gire
+            transition: transform 0.3s ease;
+          }
+  
+          &:not(.collapsed)::after {
+            content: '-'; // Icono cuando está abierto
+            background-image: none !important;
+            transform: none !important;
+          }
+        }
+      }
+
+    }
+  }
+
+  // Footer
+  .main-footer {
+    padding-top: 80px !important;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+
+    .footer-content {
+      .list {
+        ul {
+          li > a {
+            transition: color ease-in-out .3s;
+            cursor: pointer;
+
+            &:hover {
+              color: #ffffff;
+              transition: color ease-in-out .3s;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      .footer-bottom-btn-container {
+        @media (min-width:768px) {
+          width: 25% !important;
+        }
+      }
+    }
   }
 }

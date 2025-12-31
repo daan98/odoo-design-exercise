@@ -11888,6 +11888,9 @@ body .overlap {
 body .rotate-45 {
   transform: rotate(45deg);
 }
+body .footer-muted-gray-text {
+  color: #aab2bd;
+}
 body #hero {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
@@ -12098,6 +12101,40 @@ body #awards .awards-container .awards-cards-container .award-card .award-learn-
 }
 body #docs {
   padding: 80px 0 !important;
+}
+body #docs .accordion .accordion-item .accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aab2bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: none !important;
+  transition: transform 0.3s ease;
+}
+body #docs .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  content: "-";
+  background-image: none !important;
+  transform: none !important;
+}
+body .main-footer {
+  padding-top: 80px !important;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+body .main-footer .footer-content .list ul li > a {
+  transition: color ease-in-out 0.3s;
+  cursor: pointer;
+}
+body .main-footer .footer-content .list ul li > a:hover {
+  color: #ffffff;
+  transition: color ease-in-out 0.3s;
+}
+@media (min-width: 768px) {
+  body .main-footer .footer-bottom .footer-bottom-btn-container {
+    width: 25% !important;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
