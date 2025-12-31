@@ -12035,6 +12035,15 @@ body #products .products-content .play-video-image-container .play-icon-containe
     gap: 15% !important;
   }
 }
+body #page .page-content-container .section-info > button {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  transition: all 0.3s ease-in-out;
+}
+body #page .page-content-container .section-info > button:hover {
+  color: rgb(0, 86.1, 178.5);
+  text-underline-offset: 12px;
+}
 body #app .app-content-container .section-info button i {
   font-size: 40px;
 }
@@ -12051,6 +12060,37 @@ body #app .app-content-container .play-video-image-container .play-icon-containe
 body #infinite .container .infinite-content-container {
   border-top-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
+}
+body #awards {
+  background-color: #fafbff !important;
+}
+body #awards .awards-container .awards-cards-container .award-card {
+  cursor: pointer;
+  transform: translateX(0);
+  transition: transform ease-in-out 0.3s;
+}
+body #awards .awards-container .awards-cards-container .award-card:hover {
+  transform: translateY(-10px);
+}
+body #awards .awards-container .awards-cards-container .award-card .award-learn-btn {
+  color: #1a2b4b;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  transition: all 0.3s ease-in-out;
+}
+body #awards .awards-container .awards-cards-container .award-card .award-learn-btn:hover {
+  color: rgb(65.3861386139, 108.1386138614, 188.6138613861);
+  text-underline-offset: 12px;
+}
+@media (min-width: 768px) {
+  body #awards .awards-container .awards-cards-container .award-card {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  body #awards .awards-container .awards-cards-container .award-card:nth-child(odd) {
+    margin-top: 48px;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

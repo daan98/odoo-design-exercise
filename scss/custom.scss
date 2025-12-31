@@ -7,6 +7,7 @@ $link-blue: #007bff;
 $green-status: #5ccaa7;
 $credit-card: #1d1348;
 $gold-yellow: #febd3d;
+$learn-dark-blue: #1a2b4b;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,11 +121,11 @@ body {
             text-decoration: none !important;
             border-bottom: 1px dashed $link-blue;
             padding-bottom: 2px;
-
+            
             i {
               transition: transform 0.3s ease-in-out;
             }
-
+            
             &:hover {
               color: darken($color: $link-blue, $amount: 15%);
               border-bottom-color: darken($color: $link-blue, $amount: 15%);
@@ -241,6 +242,18 @@ body {
       @media (min-width: 768px) {
         gap: 15% !important;
       }
+
+      .section-info > button {
+        text-decoration-thickness: 2px;   // Control line width
+        text-underline-offset: 10px;      // Push underline to the bottom (more)
+        
+        transition: all 0.3s ease-in-out;
+  
+        &:hover {
+          color: darken($color: $link-blue, $amount: 15%);
+          text-underline-offset: 12px;
+        }
+      }
     }
   }
 
@@ -278,6 +291,51 @@ body {
       .infinite-content-container {
         border-top-left-radius: 0px !important;
         border-bottom-right-radius: 0px !important;
+      }
+    }
+  }
+
+  #awards {
+    background-color: #fafbff !important;
+
+    .awards-container {
+      .awards-cards-container {
+
+        .award-card {
+          cursor: pointer;
+          transform: translateX(0);
+          transition: transform ease-in-out .3s;
+
+          &:hover{
+            transform: translateY(-10px);
+          }
+
+          .award-learn-btn {
+            color: $learn-dark-blue;
+            
+            text-decoration-thickness: 2px;   // Control line width
+            text-underline-offset: 10px;      // Push underline to the bottom (more)
+            
+            transition: all 0.3s ease-in-out;
+      
+            &:hover {
+              color: lighten($color: $learn-dark-blue, $amount: 30%);
+              text-underline-offset: 12px;
+            }
+          }
+        }
+
+        @media (min-width: 768px) {
+          .award-card {
+            width: 100%;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          .award-card:nth-child(odd) {
+            margin-top: 48px;
+          }
+        }
       }
     }
   }
