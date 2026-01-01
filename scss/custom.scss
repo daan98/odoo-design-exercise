@@ -50,6 +50,16 @@ body {
     color: $footer-muted;
   }
 
+  .footer-link {
+    transition: color ease-in-out .3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+      transition: color ease-in-out .3s;
+    }
+  }
+
   // Hero Section
   #hero {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
@@ -386,21 +396,7 @@ body {
     padding-top: 80px !important;
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
 
-    .footer-content {
-      .list {
-        ul {
-          li > a {
-            transition: color ease-in-out .3s;
-            cursor: pointer;
-
-            &:hover {
-              color: #ffffff;
-              transition: color ease-in-out .3s;
-            }
-          }
-        }
-      }
-    }
+    .footer-content {}
 
     .footer-bottom {
       .footer-bottom-btn-container {
