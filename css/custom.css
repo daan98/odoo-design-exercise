@@ -12129,7 +12129,7 @@ body #docs .accordion .accordion-item .accordion-button:not(.collapsed)::after {
 }
 body .main-footer {
   padding-top: 80px !important;
-  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
 @media (min-width: 768px) {
   body .main-footer .footer-bottom .footer-bottom-btn-container {
